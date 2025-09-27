@@ -1,0 +1,63 @@
+{
+  "total_modifications": 2,
+  "modifications": [
+    {
+      "original_content": {
+        "start": 15,
+        "end": 27,
+        "content": "[OVERVIEW]()"
+      },
+      "user_modifications": [
+        {
+          "operation": "insert",
+          "position_in_generated": 225,
+          "length": 0,
+          "remove": "",
+          "insert": ", you know I'm kind of a data engineer myself",
+          "description": "Insert ', you know I'm kind of a data engineer myself'"
+        }
+      ]
+    },
+    {
+      "original_content": {
+        "start": 52,
+        "end": 70,
+        "content": "[TRANSFORMATION]()"
+      },
+      "user_modifications": [
+        {
+          "operation": "insert",
+          "position_in_generated": 763,
+          "length": 0,
+          "remove": "",
+          "insert": "Validation**: Perform initial schema validation and data quality checks\n4. **Data ",
+          "description": "Insert 'Validation**: Perform initial schema validation an...'"
+        },
+        {
+          "operation": "replace",
+          "position_in_generated": 719,
+          "length": 32,
+          "remove": "alidation and data quality check",
+          "insert": "ented this word and have no idea what it mean",
+          "description": "Replace 'alidation and data quality che...' with 'ented this word and have no id...'"
+        },
+        {
+          "operation": "replace",
+          "position_in_generated": 695,
+          "length": 23,
+          "remove": "Perform initial schema ",
+          "insert": "I just in",
+          "description": "Replace 'Perform initial schema ' with 'I just in'"
+        },
+        {
+          "operation": "replace",
+          "position_in_generated": 681,
+          "length": 5,
+          "remove": "Valid",
+          "insert": "Normaliz",
+          "description": "Replace 'Valid' with 'Normaliz'"
+        }
+      ]
+    }
+  ]
+}

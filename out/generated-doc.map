@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "mappings": [
+    {
+      "original_start": 15,
+      "original_end": 27,
+      "transformed_start": 15,
+      "transformed_end": 527
+    },
+    {
+      "original_start": 52,
+      "original_end": 70,
+      "transformed_start": 552,
+      "transformed_end": 1481
+    }
+  ]
+}
