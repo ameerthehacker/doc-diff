@@ -1,7 +1,7 @@
 import json
 import difflib
 from typing import List, Dict, Optional
-from diff_display import display_all_modifications, display_summary_stats
+from diff_display import display_all_modifications
 
 
 class SimpleDiffer:
@@ -134,9 +134,6 @@ def main():
         
         # Display git-like diff in console
         display_all_modifications(report['modifications'], differ.generated_content)
-        
-        # Display summary statistics
-        display_summary_stats(report)
         
         print(f"\n📁 Full diff report saved to: {output_file}")
         

@@ -114,17 +114,9 @@ def display_modification_diff(original_content: dict, user_modifications: list, 
 def display_all_modifications(modifications: list, generated_content: str) -> None:
     """
     Display all modifications with git-like diff formatting
-    """
-    print(f"\n{Colors.BOLD}{Colors.MAGENTA}=== DIFF REPORT ==={Colors.RESET}")
-    
+    """    
     for i, mod_group in enumerate(modifications, 1):
         print(f"\n{Colors.BOLD}{Colors.WHITE}[{i}] Placeholder: {mod_group['original_content']['content']}{Colors.RESET}")
-        print(f"{Colors.BOLD}Operations: {len(mod_group['user_modifications'])}{Colors.RESET}")
-        
-        # List operations
-        for j, op in enumerate(mod_group['user_modifications'], 1):
-            op_color = Colors.GREEN if op['operation'] == 'insert' else Colors.RED if op['operation'] == 'delete' else Colors.YELLOW
-            print(f"  {j}. {op_color}{op['description']}{Colors.RESET}")
         
         # Display the actual diff
         display_modification_diff(
