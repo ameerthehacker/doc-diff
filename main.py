@@ -1,5 +1,6 @@
 import re
 import json
+import os
 from typing import List, Dict, Tuple
 from dataclasses import dataclass, asdict
 
@@ -133,9 +134,15 @@ The pipeline incorporates modern technologies including Apache Kafka for streami
         print(f"Source map saved to: {file_path}")
 
 def main():
+    # Create output directory if it doesn't exist
+    os.makedirs('out', exist_ok=True)
+    
     # Read template file
     with open('playground/template.md', 'r') as f:
         template_content = f.read()
+    
+    print("🔄 Processing template...")
+    print(f"   Template: playground/template.md")
     
     # Create hydrator and process template
     hydrator = TemplateHydrator()
@@ -148,7 +155,11 @@ def main():
     # Save source map
     hydrator.save_source_map('out/generated-doc.map')
     
-    print(f"Transformed content saved to: out/generated-doc.md")
+    print(f"\n✅ Template hydration complete!")
+    print(f"📁 Generated files:")
+    print(f"   out/generated-doc.md - Hydrated document")
+    print(f"   out/generated-doc.map - Source map")
+    print(f"\n💡 Next step: Create out/generated-doc-user-modified.md and make your changes!")
 
 if __name__ == "__main__":
     main()
